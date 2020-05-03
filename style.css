@@ -1,0 +1,299 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	color: black;
+	font-family: "Roboto", sans-serif;
+	font-size: 14px;
+	line-height: 150%;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+ul li {
+	list-style: none;
+}
+
+/* header */
+
+header {
+	margin-top: 60px;
+	margin-bottom: 47px;
+}
+
+header h1 {
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-size: 35px;
+	line-height: 47px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+header nav a,
+footer nav a {
+	font-size: 15px;
+	line-height: 18px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+header nav a:hover,
+footer nav a:hover {
+	color: #FF7931;
+}
+
+header nav ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 46px;
+}
+
+/* main */
+
+main h3 {
+	font-weight: bold;
+	font-size: 17px;
+	line-height: 20px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+main h4 {
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-size: 23px;
+	line-height: 31px;
+}
+
+main h4:hover {
+	color: #FF7931;
+}
+
+/* promo */
+
+.promo {
+	color: #ffffff;
+	background: #000000 url(img/promo.jpg) no-repeat;
+	height: 464px;
+	max-width: 1440px;
+	background-position: 50%;
+}
+
+.promo .wrapper_promo {
+	min-height: 464px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.promo h2 {
+	font-size: 72px;
+	font-weight: normal;
+	line-height: 84px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.promo h2::before {
+	content: "";
+	display: block;
+	background: url(img/icon.svg) no-repeat center center;
+	height: 55px;
+	width: 55px;
+	margin: auto auto 32px;
+	padding-bottom: 32px;
+}
+
+.promo p {
+	padding-top: auto;
+	padding-bottom: 48px;
+	width: 456px;
+}
+
+/* reviews */
+
+main h3:first-child {
+	margin-top: 44px;
+	margin-bottom: 20px;
+}
+
+main .wrapper_reviews {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+main .reviews_item {
+	width: 370px;
+}
+
+main .reviews_item h4 {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+/* tickets */
+
+main .tickets {
+	background: #F7F7F7 url(img/ellipse.svg) no-repeat center;
+}
+
+main .wrapper_tickets {
+	min-height: 556px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+main .tickets h3 {
+	margin-top: 0;
+	padding-top: 34px;
+}
+
+main .tickets h4 {
+	margin: 0;
+}
+
+main .tickets ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0;
+	width: 370px;
+	text-align: center;
+}
+
+main .tickets li {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+main .tickets li p {
+	margin-top: 10px;
+}
+
+main .tickets li:not(:last-of-type)::after {
+	content: "";
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.2);
+	opacity: 0.4;
+	width: 100px;
+	height: 1px;
+}
+
+main .tickets .button {
+	display: flex;
+	align-items: center;
+	width: 170px;
+	height: 47px;
+	background-color: #FF7931;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-family: "Roboto", serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 14px;
+	padding-left: 30px;
+	letter-spacing: 2px;
+	margin-bottom: 36px;
+}
+
+main .tickets .button::after {
+	content: "";
+	display: block;
+	background: url(img/arrow.svg) no-repeat center;
+	width: 24px;
+	height: 25px;
+}
+
+main .tickets .button:hover {
+	opacity: 0.8;
+}
+
+/* footer */
+
+footer {
+	color: #ffffff;
+	background-color: #575757;
+	height: 295px;
+	padding-top: 26px;
+}
+
+footer h2 {
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-size: 28px;
+	line-height: 37px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+footer nav {
+	margin-top: 30px;
+	padding-bottom: 46px;
+	border-bottom: 1px solid rgba(256, 256, 256, 0.4);
+}
+
+footer nav ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+}
+
+footer nav a {
+	color: #ffffff;
+}
+
+footer .social {
+	margin-top: 42px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+footer .social li:not(:last-of-type) {
+	margin-right: 14px;
+}
+
+footer .social a {
+	display: block;
+	width: 47px;
+	height: 47px;
+}
+
+footer .social li:nth-child(1) a {
+	background: #ffffff url(img/inst.svg) no-repeat center;
+}
+
+footer .social li:nth-child(2) a {
+	background: #ffffff url(img/facebook.svg) no-repeat center;
+}
+
+footer .social li:nth-child(3) a {
+	background: #ffffff url(img/twitter.svg) no-repeat center;
+}
